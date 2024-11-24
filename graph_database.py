@@ -77,6 +77,12 @@ class RdfToNeo4jConverter:
             
             return {"nodes": nodes, "links": links}
 
+    def export_graph_data(self, output_file: str):
+        """Export graph data to JSON file"""
+        data = self.get_graph_data()
+        with open(output_file, 'w') as f:
+            json.dump(data, f, indent=2)
+
 # Flask app for visualization
 app = Flask(__name__)
 
