@@ -1,0 +1,846 @@
+{
+  "nodes": [
+    {
+      "id": "http://example.org/contract#Obligation_FMC1_Timely_Maintenance",
+      "label": "Obligation_FMC1_Timely_Maintenance"
+    },
+    {
+      "id": "http://example.org/contract#Obligation",
+      "label": "Obligation"
+    },
+    {
+      "id": "http://example.org/contract#Rebate_Volume_Tier1",
+      "label": "Rebate_Volume_Tier1"
+    },
+    {
+      "id": "http://example.org/contract#Rebate",
+      "label": "Rebate"
+    },
+    {
+      "id": "http://example.org/contract#hasDiscountCondition",
+      "label": "hasDiscountCondition"
+    },
+    {
+      "id": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "label": "DatatypeProperty"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_5_year_100000_mile_warranty",
+      "label": "ServiceLevel_5_year_100000_mile_warranty"
+    },
+    {
+      "id": "http://example.org/contract#Servicelevel",
+      "label": "Servicelevel"
+    },
+    {
+      "id": "http://example.org/contract#Contract_OEM1_FMC1",
+      "label": "Contract_OEM1_FMC1"
+    },
+    {
+      "id": "http://example.org/contract#Obligation_FMC1_Procure_Vehicles",
+      "label": "Obligation_FMC1_Procure_Vehicles"
+    },
+    {
+      "id": "http://example.org/contract#PaymentTerm_30_percent_upfront",
+      "label": "PaymentTerm_30_percent_upfront"
+    },
+    {
+      "id": "http://example.org/contract#Paymentterm",
+      "label": "Paymentterm"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_24_7_support_hotline",
+      "label": "ServiceLevel_24_7_support_hotline"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_98_percent_on_time_delivery",
+      "label": "ServiceLevel_98_percent_on_time_delivery"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable_Vehicles",
+      "label": "Deliverable_Vehicles"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_Loaner_vehicles_if_repair_exceeds_SLA",
+      "label": "ServiceLevel_Loaner_vehicles_if_repair_exceeds_SLA"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable_Model_OEM1_C",
+      "label": "Deliverable_Model_OEM1_C"
+    },
+    {
+      "id": "$40000",
+      "label": "$40000"
+    },
+    {
+      "id": "http://example.org/contract#Rebate_Volume_Tier2",
+      "label": "Rebate_Volume_Tier2"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_Priority_service_network_access",
+      "label": "ServiceLevel_Priority_service_network_access"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable_Model_OEM1_A",
+      "label": "Deliverable_Model_OEM1_A"
+    },
+    {
+      "id": "http://example.org/contract#Party_FMC1",
+      "label": "Party_FMC1"
+    },
+    {
+      "id": "http://example.org/contract#hasObligation",
+      "label": "hasObligation"
+    },
+    {
+      "id": "http://example.org/contract#hasDiscountValue",
+      "label": "hasDiscountValue"
+    },
+    {
+      "id": "http://example.org/contract#Orange_County_CA_USA",
+      "label": "Orange_County_CA_USA"
+    },
+    {
+      "id": "http://example.org/contract#Orange",
+      "label": "Orange"
+    },
+    {
+      "id": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "label": "Annual_Purchase_1500_to_2499"
+    },
+    {
+      "id": "http://example.org/contract#Obligation_OEM1_Supply_Vehicles",
+      "label": "Obligation_OEM1_Supply_Vehicles"
+    },
+    {
+      "id": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "label": "Annual_Purchase_1000_to_1499"
+    },
+    {
+      "id": "http://example.org/contract#hasRebateValue",
+      "label": "hasRebateValue"
+    },
+    {
+      "id": "http://example.org/contract#Annual",
+      "label": "Annual"
+    },
+    {
+      "id": "http://example.org/contract#offersDiscount",
+      "label": "offersDiscount"
+    },
+    {
+      "id": "http://example.org/contract#Obligation_FMC1_Ensure_Proper_Usage",
+      "label": "Obligation_FMC1_Ensure_Proper_Usage"
+    },
+    {
+      "id": "3_years",
+      "label": "3_years"
+    },
+    {
+      "id": "http://example.org/contract#Discount_Seasonal",
+      "label": "Discount_Seasonal"
+    },
+    {
+      "id": "5%",
+      "label": "5%"
+    },
+    {
+      "id": "http://example.org/contract#London_UK",
+      "label": "London_UK"
+    },
+    {
+      "id": "http://example.org/contract#includesDeliverable",
+      "label": "includesDeliverable"
+    },
+    {
+      "id": "http://example.org/contract#Contract",
+      "label": "Contract"
+    },
+    {
+      "id": "http://example.org/contract#hasDuration",
+      "label": "hasDuration"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_Penalty_500_per_vehicle_per_day",
+      "label": "ServiceLevel_Penalty_500_per_vehicle_per_day"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_95_percent_fleet_uptime",
+      "label": "ServiceLevel_95_percent_fleet_uptime"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_72_hours_standard_repairs",
+      "label": "ServiceLevel_72_hours_standard_repairs"
+    },
+    {
+      "id": "http://example.org/contract#500_vehicles_annually",
+      "label": "500_vehicles_annually"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "label": "Deliverable_Fleet_Management_Services"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable",
+      "label": "Deliverable"
+    },
+    {
+      "id": "ServiceLevel_Free_software_updates_5_years",
+      "label": "ServiceLevel_Free_software_updates_5_years"
+    },
+    {
+      "id": "http://example.org/contract#Deliverable_Model_OEM1_B",
+      "label": "Deliverable_Model_OEM1_B"
+    },
+    {
+      "id": "$30000",
+      "label": "$30000"
+    },
+    {
+      "id": "http://example.org/contract#500",
+      "label": "500"
+    },
+    {
+      "id": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": "ObjectProperty"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_Max_Penalty_50000_per_incident",
+      "label": "ServiceLevel_Max_Penalty_50000_per_incident"
+    },
+    {
+      "id": "http://example.org/contract#Party_OEM1",
+      "label": "Party_OEM1"
+    },
+    {
+      "id": "http://example.org/contract#Party",
+      "label": "Party"
+    },
+    {
+      "id": "http://example.org/contract#Discount_EarlyPayment",
+      "label": "Discount_EarlyPayment"
+    },
+    {
+      "id": "http://example.org/contract#hasRebateCondition",
+      "label": "hasRebateCondition"
+    },
+    {
+      "id": "http://example.org/contract#hasPrice",
+      "label": "hasPrice"
+    },
+    {
+      "id": "PaymentTerm_70_percent_within_60_days",
+      "label": "PaymentTerm_70_percent_within_60_days"
+    },
+    {
+      "id": "http://example.org/contract#ServiceLevel_On_site_technicians",
+      "label": "ServiceLevel_On_site_technicians"
+    },
+    {
+      "id": "http://example.org/contract#Rebate_Volume_Tier3",
+      "label": "Rebate_Volume_Tier3"
+    },
+    {
+      "id": "http://example.org/contract#offersRebate",
+      "label": "offersRebate"
+    },
+    {
+      "id": "http://example.org/contract#Orders_January_to_March",
+      "label": "Orders_January_to_March"
+    },
+    {
+      "id": "http://example.org/contract#Orders",
+      "label": "Orders"
+    },
+    {
+      "id": "http://example.org/contract#Obligation_OEM1_Provide_After_Sales_Services",
+      "label": "Obligation_OEM1_Provide_After_Sales_Services"
+    },
+    {
+      "id": "http://example.org/contract#receivesDeliverable",
+      "label": "receivesDeliverable"
+    },
+    {
+      "id": "7%",
+      "label": "7%"
+    },
+    {
+      "id": "http://example.org/contract#Discount",
+      "label": "Discount"
+    },
+    {
+      "id": "http://example.org/contract#hasServiceLevel",
+      "label": "hasServiceLevel"
+    },
+    {
+      "id": "http://example.org/contract#hasQuantity",
+      "label": "hasQuantity"
+    },
+    {
+      "id": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "label": "Annual_Purchase_Above_2500"
+    },
+    {
+      "id": "1500_vehicles_over_three_years",
+      "label": "1500_vehicles_over_three_years"
+    },
+    {
+      "id": "3%",
+      "label": "3%"
+    },
+    {
+      "id": "http://example.org/contract#providesDeliverable",
+      "label": "providesDeliverable"
+    },
+    {
+      "id": "$25000",
+      "label": "$25000"
+    },
+    {
+      "id": "http://example.org/contract#hasPaymentTerms",
+      "label": "hasPaymentTerms"
+    },
+    {
+      "id": "ServiceLevel_7_days_major_repairs",
+      "label": "ServiceLevel_7_days_major_repairs"
+    },
+    {
+      "id": "Payment_Within_15_Days",
+      "label": "Payment_Within_15_Days"
+    },
+    {
+      "id": "http://example.org/contract#hasLocation",
+      "label": "hasLocation"
+    },
+    {
+      "id": "http://example.org/contract#London",
+      "label": "London"
+    },
+    {
+      "id": "2%",
+      "label": "2%"
+    }
+  ],
+  "links": [
+    {
+      "source": "http://example.org/contract#ServiceLevel_Priority_service_network_access",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_A",
+      "target": "http://example.org/contract#Deliverable",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_FMC1",
+      "target": "http://example.org/contract#Deliverable_Vehicles",
+      "type": "http://example.org/contract#receivesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Deliverable_Vehicles",
+      "type": "http://example.org/contract#includesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "type": "http://example.org/contract#providesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#hasObligation",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasDiscountValue",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Orange_County_CA_USA",
+      "target": "http://example.org/contract#Orange",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Rebate_Volume_Tier1",
+      "type": "http://example.org/contract#offersRebate"
+    },
+    {
+      "source": "http://example.org/contract#Obligation_OEM1_Supply_Vehicles",
+      "target": "http://example.org/contract#Obligation",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#hasRebateValue",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#offersDiscount",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Obligation_FMC1_Ensure_Proper_Usage",
+      "target": "http://example.org/contract#Obligation",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "3_years",
+      "type": "http://example.org/contract#hasDuration"
+    },
+    {
+      "source": "http://example.org/contract#Discount_Seasonal",
+      "target": "5%",
+      "type": "http://example.org/contract#hasDiscountValue"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_98_percent_on_time_delivery",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#London_UK",
+      "type": "http://example.org/contract#hasLocation"
+    },
+    {
+      "source": "http://example.org/contract#includesDeliverable",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Contract",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Discount_Seasonal",
+      "type": "http://example.org/contract#offersDiscount"
+    },
+    {
+      "source": "http://example.org/contract#hasDuration",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_Penalty_500_per_vehicle_per_day",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_Max_Penalty_50000_per_incident",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_95_percent_fleet_uptime",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#hasRebateCondition",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasPrice",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "5%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "PaymentTerm_70_percent_within_60_days",
+      "type": "http://example.org/contract#hasPaymentTerms"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "target": "http://example.org/contract#ServiceLevel_On_site_technicians",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Rebate_Volume_Tier3",
+      "type": "http://example.org/contract#offersRebate"
+    },
+    {
+      "source": "http://example.org/contract#offersRebate",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_On_site_technicians",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Obligation_FMC1_Procure_Vehicles",
+      "target": "http://example.org/contract#Obligation",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_FMC1",
+      "target": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "type": "http://example.org/contract#receivesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Deliverable_Vehicles",
+      "type": "http://example.org/contract#providesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_B",
+      "target": "http://example.org/contract#Deliverable",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_Penalty_500_per_vehicle_per_day",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Orders_January_to_March",
+      "target": "http://example.org/contract#Orders",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Obligation_OEM1_Provide_After_Sales_Services",
+      "type": "http://example.org/contract#hasObligation"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#Deliverable",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_FMC1",
+      "target": "http://example.org/contract#Orange_County_CA_USA",
+      "type": "http://example.org/contract#hasLocation"
+    },
+    {
+      "source": "http://example.org/contract#receivesDeliverable",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "7%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#Discount_Seasonal",
+      "target": "http://example.org/contract#Discount",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "http://example.org/contract#Rebate",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasServiceLevel",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Obligation_FMC1_Timely_Maintenance",
+      "type": "http://example.org/contract#hasObligation"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "type": "http://example.org/contract#includesDeliverable"
+    },
+    {
+      "source": "http://example.org/contract#hasQuantity",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#PaymentTerm_30_percent_upfront",
+      "type": "http://example.org/contract#hasPaymentTerms"
+    },
+    {
+      "source": "http://example.org/contract#Obligation_OEM1_Provide_After_Sales_Services",
+      "target": "http://example.org/contract#Obligation",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "1500_vehicles_over_three_years",
+      "type": "http://example.org/contract#hasQuantity"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_72_hours_standard_repairs",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "3%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#providesDeliverable",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "target": "http://example.org/contract#ServiceLevel_Priority_service_network_access",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_A",
+      "target": "$25000",
+      "type": "http://example.org/contract#hasPrice"
+    },
+    {
+      "source": "http://example.org/contract#hasPaymentTerms",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "ServiceLevel_7_days_major_repairs",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Discount_EarlyPayment",
+      "target": "Payment_Within_15_Days",
+      "type": "http://example.org/contract#hasDiscountCondition"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_Loaner_vehicles_if_repair_exceeds_SLA",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasServiceLevel",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Discount_EarlyPayment",
+      "target": "http://example.org/contract#Discount",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "http://example.org/contract#Rebate",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Obligation_OEM1_Supply_Vehicles",
+      "type": "http://example.org/contract#hasObligation"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_C",
+      "target": "http://example.org/contract#Deliverable",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Discount_Seasonal",
+      "target": "http://example.org/contract#Orders_January_to_March",
+      "type": "http://example.org/contract#hasDiscountCondition"
+    },
+    {
+      "source": "http://example.org/contract#hasQuantity",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_FMC1",
+      "target": "http://example.org/contract#Party",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasLocation",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_95_percent_fleet_uptime",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_5_year_100000_mile_warranty",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#hasPaymentTerms",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#London_UK",
+      "target": "http://example.org/contract#London",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Obligation_FMC1_Ensure_Proper_Usage",
+      "type": "http://example.org/contract#hasObligation"
+    },
+    {
+      "source": "http://example.org/contract#Discount_EarlyPayment",
+      "target": "2%",
+      "type": "http://example.org/contract#hasDiscountValue"
+    },
+    {
+      "source": "http://example.org/contract#hasDiscountCondition",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_5_year_100000_mile_warranty",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Contract_OEM1_FMC1",
+      "target": "http://example.org/contract#Obligation_FMC1_Procure_Vehicles",
+      "type": "http://example.org/contract#hasObligation"
+    },
+    {
+      "source": "http://example.org/contract#PaymentTerm_30_percent_upfront",
+      "target": "http://example.org/contract#Paymentterm",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_24_7_support_hotline",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#ServiceLevel_98_percent_on_time_delivery",
+      "target": "http://example.org/contract#Servicelevel",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_72_hours_standard_repairs",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#500_vehicles_annually",
+      "type": "http://example.org/contract#hasQuantity"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "target": "http://example.org/contract#Deliverable",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "target": "ServiceLevel_Free_software_updates_5_years",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_B",
+      "target": "$30000",
+      "type": "http://example.org/contract#hasPrice"
+    },
+    {
+      "source": "http://example.org/contract#500_vehicles_annually",
+      "target": "http://example.org/contract#500",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasDiscountCondition",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_Max_Penalty_50000_per_incident",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Party",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Fleet_Management_Services",
+      "target": "http://example.org/contract#ServiceLevel_24_7_support_hotline",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Discount_EarlyPayment",
+      "type": "http://example.org/contract#offersDiscount"
+    },
+    {
+      "source": "http://example.org/contract#Obligation_FMC1_Timely_Maintenance",
+      "target": "http://example.org/contract#Obligation",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "http://example.org/contract#Rebate",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Vehicles",
+      "target": "http://example.org/contract#ServiceLevel_Loaner_vehicles_if_repair_exceeds_SLA",
+      "type": "http://example.org/contract#hasServiceLevel"
+    },
+    {
+      "source": "http://example.org/contract#Deliverable_Model_OEM1_C",
+      "target": "$40000",
+      "type": "http://example.org/contract#hasPrice"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Rebate_Volume_Tier2",
+      "type": "http://example.org/contract#offersRebate"
+    }
+  ]
+}
