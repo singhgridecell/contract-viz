@@ -1,42 +1,6 @@
 {
   "nodes": [
     {
-      "id": "http://example.org/contract#Annual_Purchase_1500_to_2499",
-      "label": "Annual_Purchase_1500_to_2499"
-    },
-    {
-      "id": "3%",
-      "label": "3%"
-    },
-    {
-      "id": "http://example.org/contract#Discount",
-      "label": "Discount"
-    },
-    {
-      "id": "http://example.org/contract#offersRebate",
-      "label": "offersRebate"
-    },
-    {
-      "id": "http://example.org/contract#Party_OEM1",
-      "label": "Party_OEM1"
-    },
-    {
-      "id": "http://example.org/contract#Discount_EarlyPayment",
-      "label": "Discount_EarlyPayment"
-    },
-    {
-      "id": "http://example.org/contract#Discount_Seasonal",
-      "label": "Discount_Seasonal"
-    },
-    {
-      "id": "http://example.org/contract#Orders_January_to_March",
-      "label": "Orders_January_to_March"
-    },
-    {
-      "id": "http://example.org/contract#Party",
-      "label": "Party"
-    },
-    {
       "id": "http://example.org/contract#hasDiscountValue",
       "label": "hasDiscountValue"
     },
@@ -45,183 +9,114 @@
       "label": "DatatypeProperty"
     },
     {
-      "id": "http://example.org/contract#hasDiscountCondition",
-      "label": "hasDiscountCondition"
-    },
-    {
-      "id": "http://example.org/contract#offersDiscount",
-      "label": "offersDiscount"
-    },
-    {
-      "id": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "label": "ObjectProperty"
-    },
-    {
-      "id": "http://example.org/contract#Rebate_Volume_Tier3",
-      "label": "Rebate_Volume_Tier3"
-    },
-    {
-      "id": "http://example.org/contract#Rebate",
-      "label": "Rebate"
-    },
-    {
-      "id": "http://example.org/contract#hasRebateCondition",
-      "label": "hasRebateCondition"
-    },
-    {
-      "id": "http://example.org/contract#hasRebateValue",
-      "label": "hasRebateValue"
+      "id": "http://example.org/contract#Party_OEM1",
+      "label": "Party_OEM1"
     },
     {
       "id": "http://example.org/contract#Rebate_Volume_Tier2",
       "label": "Rebate_Volume_Tier2"
     },
     {
-      "id": "http://example.org/contract#Annual_Purchase_Above_2500",
-      "label": "Annual_Purchase_Above_2500"
-    },
-    {
-      "id": "http://example.org/contract#Annual",
-      "label": "Annual"
-    },
-    {
-      "id": "http://example.org/contract#Orders",
-      "label": "Orders"
-    },
-    {
-      "id": "Payment_Within_15_Days",
-      "label": "Payment_Within_15_Days"
-    },
-    {
-      "id": "http://example.org/contract#Rebate_Volume_Tier1",
-      "label": "Rebate_Volume_Tier1"
-    },
-    {
-      "id": "http://example.org/contract#Annual_Purchase_1000_to_1499",
-      "label": "Annual_Purchase_1000_to_1499"
+      "id": "http://example.org/contract#Discount_Seasonal",
+      "label": "Discount_Seasonal"
     },
     {
       "id": "5%",
       "label": "5%"
     },
     {
+      "id": "http://example.org/contract#Orders_January_to_March",
+      "label": "Orders_January_to_March"
+    },
+    {
+      "id": "http://example.org/contract#Orders",
+      "label": "Orders"
+    },
+    {
+      "id": "http://example.org/contract#Rebate_Volume_Tier1",
+      "label": "Rebate_Volume_Tier1"
+    },
+    {
+      "id": "http://example.org/contract#Discount_EarlyPayment",
+      "label": "Discount_EarlyPayment"
+    },
+    {
       "id": "2%",
       "label": "2%"
     },
     {
+      "id": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "label": "Annual_Purchase_1500_to_2499"
+    },
+    {
+      "id": "http://example.org/contract#Annual",
+      "label": "Annual"
+    },
+    {
+      "id": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "label": "Annual_Purchase_1000_to_1499"
+    },
+    {
+      "id": "http://example.org/contract#offersRebate",
+      "label": "offersRebate"
+    },
+    {
+      "id": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "label": "ObjectProperty"
+    },
+    {
+      "id": "http://example.org/contract#offersDiscount",
+      "label": "offersDiscount"
+    },
+    {
+      "id": "http://example.org/contract#hasRebateCondition",
+      "label": "hasRebateCondition"
+    },
+    {
+      "id": "http://example.org/contract#Rebate_Volume_Tier3",
+      "label": "Rebate_Volume_Tier3"
+    },
+    {
+      "id": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "label": "Annual_Purchase_Above_2500"
+    },
+    {
       "id": "7%",
       "label": "7%"
+    },
+    {
+      "id": "http://example.org/contract#hasRebateValue",
+      "label": "hasRebateValue"
+    },
+    {
+      "id": "http://example.org/contract#Party",
+      "label": "Party"
+    },
+    {
+      "id": "http://example.org/contract#Rebate",
+      "label": "Rebate"
+    },
+    {
+      "id": "http://example.org/contract#Discount",
+      "label": "Discount"
+    },
+    {
+      "id": "3%",
+      "label": "3%"
+    },
+    {
+      "id": "http://example.org/contract#hasDiscountCondition",
+      "label": "hasDiscountCondition"
+    },
+    {
+      "id": "Payment_Within_15_Days",
+      "label": "Payment_Within_15_Days"
     }
   ],
   "links": [
     {
-      "source": "http://example.org/contract#Party_OEM1",
-      "target": "http://example.org/contract#Rebate_Volume_Tier1",
-      "type": "http://example.org/contract#offersRebate"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier1",
-      "target": "3%",
-      "type": "http://example.org/contract#hasRebateValue"
-    },
-    {
-      "source": "http://example.org/contract#Annual_Purchase_1500_to_2499",
-      "target": "http://example.org/contract#Annual",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Annual_Purchase_1000_to_1499",
-      "target": "http://example.org/contract#Annual",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier2",
-      "target": "5%",
-      "type": "http://example.org/contract#hasRebateValue"
-    },
-    {
-      "source": "http://example.org/contract#Discount_EarlyPayment",
-      "target": "http://example.org/contract#Discount",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier1",
-      "target": "http://example.org/contract#Rebate",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#offersRebate",
-      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Discount_Seasonal",
-      "target": "http://example.org/contract#Discount",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Party_OEM1",
-      "target": "http://example.org/contract#Rebate_Volume_Tier3",
-      "type": "http://example.org/contract#offersRebate"
-    },
-    {
-      "source": "http://example.org/contract#Party_OEM1",
-      "target": "http://example.org/contract#Discount_EarlyPayment",
-      "type": "http://example.org/contract#offersDiscount"
-    },
-    {
-      "source": "http://example.org/contract#Discount_Seasonal",
-      "target": "http://example.org/contract#Orders_January_to_March",
-      "type": "http://example.org/contract#hasDiscountCondition"
-    },
-    {
-      "source": "http://example.org/contract#Party_OEM1",
-      "target": "http://example.org/contract#Party",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
       "source": "http://example.org/contract#hasDiscountValue",
       "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#hasDiscountCondition",
-      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#offersDiscount",
-      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier3",
-      "target": "http://example.org/contract#Rebate",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#hasRebateCondition",
-      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#hasDiscountCondition",
-      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#hasRebateValue",
-      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier2",
-      "target": "http://example.org/contract#Rebate",
-      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-    },
-    {
-      "source": "http://example.org/contract#Annual_Purchase_Above_2500",
-      "target": "http://example.org/contract#Annual",
       "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     },
     {
@@ -230,8 +125,128 @@
       "type": "http://example.org/contract#offersRebate"
     },
     {
+      "source": "http://example.org/contract#Discount_Seasonal",
+      "target": "5%",
+      "type": "http://example.org/contract#hasDiscountValue"
+    },
+    {
       "source": "http://example.org/contract#Orders_January_to_March",
       "target": "http://example.org/contract#Orders",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Rebate_Volume_Tier1",
+      "type": "http://example.org/contract#offersRebate"
+    },
+    {
+      "source": "http://example.org/contract#Discount_EarlyPayment",
+      "target": "2%",
+      "type": "http://example.org/contract#hasDiscountValue"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "5%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "http://example.org/contract#Annual_Purchase_1500_to_2499",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#offersRebate",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#offersDiscount",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_1000_to_1499",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#hasRebateCondition",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Discount_EarlyPayment",
+      "type": "http://example.org/contract#offersDiscount"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "type": "http://example.org/contract#hasRebateCondition"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "7%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#hasRebateValue",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Party",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier3",
+      "target": "http://example.org/contract#Rebate",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Discount_Seasonal",
+      "type": "http://example.org/contract#offersDiscount"
+    },
+    {
+      "source": "http://example.org/contract#Discount_EarlyPayment",
+      "target": "http://example.org/contract#Discount",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "http://example.org/contract#Rebate",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier1",
+      "target": "3%",
+      "type": "http://example.org/contract#hasRebateValue"
+    },
+    {
+      "source": "http://example.org/contract#hasDiscountCondition",
+      "target": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Annual_Purchase_Above_2500",
+      "target": "http://example.org/contract#Annual",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "source": "http://example.org/contract#Rebate_Volume_Tier2",
+      "target": "http://example.org/contract#Rebate",
       "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     },
     {
@@ -240,39 +255,24 @@
       "type": "http://example.org/contract#hasDiscountCondition"
     },
     {
-      "source": "http://example.org/contract#Rebate_Volume_Tier1",
-      "target": "http://example.org/contract#Annual_Purchase_1000_to_1499",
-      "type": "http://example.org/contract#hasRebateCondition"
-    },
-    {
-      "source": "http://example.org/contract#Party_OEM1",
-      "target": "http://example.org/contract#Discount_Seasonal",
-      "type": "http://example.org/contract#offersDiscount"
+      "source": "http://example.org/contract#Discount_Seasonal",
+      "target": "http://example.org/contract#Orders_January_to_March",
+      "type": "http://example.org/contract#hasDiscountCondition"
     },
     {
       "source": "http://example.org/contract#Discount_Seasonal",
-      "target": "5%",
-      "type": "http://example.org/contract#hasDiscountValue"
+      "target": "http://example.org/contract#Discount",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     },
     {
-      "source": "http://example.org/contract#Discount_EarlyPayment",
-      "target": "2%",
-      "type": "http://example.org/contract#hasDiscountValue"
+      "source": "http://example.org/contract#hasDiscountCondition",
+      "target": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     },
     {
-      "source": "http://example.org/contract#Rebate_Volume_Tier3",
-      "target": "7%",
-      "type": "http://example.org/contract#hasRebateValue"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier2",
-      "target": "http://example.org/contract#Annual_Purchase_1500_to_2499",
-      "type": "http://example.org/contract#hasRebateCondition"
-    },
-    {
-      "source": "http://example.org/contract#Rebate_Volume_Tier3",
-      "target": "http://example.org/contract#Annual_Purchase_Above_2500",
-      "type": "http://example.org/contract#hasRebateCondition"
+      "source": "http://example.org/contract#Party_OEM1",
+      "target": "http://example.org/contract#Rebate_Volume_Tier3",
+      "type": "http://example.org/contract#offersRebate"
     }
   ]
 }
