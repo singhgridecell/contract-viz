@@ -1,0 +1,491 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            #mynetwork {
+                width: 100vw !important;
+                height: calc(100vh - 50px) !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                position: fixed !important;
+                top: 50px !important;
+                left: 0 !important;
+            }
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                width: 100%;
+                height: 50px;
+            }
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 20px;
+                height: 100%;
+            }
+            .tab button:hover {
+                background-color: #ddd;
+            }
+            .tab button.active {
+                background-color: #ccc;
+            }
+            .tabcontent {
+                display: none;
+                position: fixed;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: calc(100vh - 50px);
+            }
+            #Visualization {
+                display: block;
+                padding: 0;
+                margin: 0;
+            }
+            #Contract {
+                padding: 0;
+                overflow-y: auto;
+                background-color: white;
+            }
+            .contract-text {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .contract-text h1 {
+                font-size: 28px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .contract-text h3 {
+                font-size: 20px;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                color: #333;
+            }
+            .contract-text p {
+                margin-bottom: 15px;
+            }
+            .contract-text ul {
+                margin-bottom: 15px;
+                padding-left: 25px;
+            }
+            .contract-text ul ul {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .contract-text li {
+                margin-bottom: 8px;
+            }
+            .section {
+                margin-bottom: 30px;
+            }
+            .signature {
+                margin-top: 50px;
+                border-top: 1px solid #ccc;
+                padding-top: 30px;
+            }
+            .legend {
+                position: fixed;
+                top: 70px;
+                right: 20px;
+                background: white;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+                z-index: 1000;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            canvas {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        </style>
+        
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100vw;
+                 height: 100vh;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Visualization')" id="defaultOpen">Contract Graph</button>
+            <button class="tablinks" onclick="openTab(event, 'Contract')">Contract Text</button>
+        </div></div>
+        
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "http://example.org/contract#Contract_GM_Element", "label": "Contract_GM_Element", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Contract_GM_Element"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "http://example.org/contract#Contract", "label": "Contract", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Contract"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#45B6FE", "font": {"color": "black"}, "id": "http://example.org/contract#Deliverable_Model_GM_C", "label": "Deliverable_Model_GM_C", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Deliverable_Model_GM_C"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#45B6FE", "font": {"color": "black"}, "id": "http://example.org/contract#Deliverable", "label": "Deliverable", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Deliverable"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#45B6FE", "font": {"color": "black"}, "id": "http://example.org/contract#Deliverable_Vehicles", "label": "Deliverable_Vehicles", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Deliverable_Vehicles"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "http://example.org/contract#500_vehicles_annually", "label": "500_vehicles_annually", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#500_vehicles_annually"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "http://example.org/contract#500", "label": "500", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#500"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#45B6FE", "font": {"color": "black"}, "id": "http://example.org/contract#Deliverable_Model_GM_A", "label": "Deliverable_Model_GM_A", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Deliverable_Model_GM_A"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "$25000", "label": "$25000", "mass": 5, "shape": "dot", "size": 144, "title": "$25000"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#45B6FE", "font": {"color": "black"}, "id": "http://example.org/contract#Deliverable_Model_GM_B", "label": "Deliverable_Model_GM_B", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Deliverable_Model_GM_B"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#76b7b2", "font": {"color": "black"}, "id": "http://example.org/contract#PaymentTerm_30_percent_upfront", "label": "PaymentTerm_30_percent_upfront", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#PaymentTerm_30_percent_upfront"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#76b7b2", "font": {"color": "black"}, "id": "http://example.org/contract#Paymentterm", "label": "Paymentterm", "mass": 5, "shape": "dot", "size": 144, "title": "http://example.org/contract#Paymentterm"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "$30000", "label": "$30000", "mass": 5, "shape": "dot", "size": 144, "title": "$30000"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "$40000", "label": "$40000", "mass": 5, "shape": "dot", "size": 144, "title": "$40000"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#b3b3b3", "font": {"color": "black"}, "id": "1500_vehicles_over_three_years", "label": "1500_vehicles_over_three_years", "mass": 5, "shape": "dot", "size": 144, "title": "1500_vehicles_over_three_years"}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#76b7b2", "font": {"color": "black"}, "id": "PaymentTerm_70_percent_within_60_days", "label": "PaymentTerm_70_percent_within_60_days", "mass": 5, "shape": "dot", "size": 144, "title": "PaymentTerm_70_percent_within_60_days"}]);
+                  edges = new vis.DataSet([{"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Contract_GM_Element", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Contract", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_C", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Deliverable", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Vehicles", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Deliverable", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#500_vehicles_annually", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#500", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Vehicles", "label": "hasQuantity", "length": 4000, "title": "http://example.org/contract#hasQuantity", "to": "http://example.org/contract#500_vehicles_annually", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_A", "label": "hasPrice", "length": 4000, "title": "http://example.org/contract#hasPrice", "to": "$25000", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_B", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Deliverable", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_A", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Deliverable", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#PaymentTerm_30_percent_upfront", "label": "type", "length": 4000, "title": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "to": "http://example.org/contract#Paymentterm", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_B", "label": "hasPrice", "length": 4000, "title": "http://example.org/contract#hasPrice", "to": "$30000", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Model_GM_C", "label": "hasPrice", "length": 4000, "title": "http://example.org/contract#hasPrice", "to": "$40000", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Deliverable_Vehicles", "label": "hasQuantity", "length": 4000, "title": "http://example.org/contract#hasQuantity", "to": "1500_vehicles_over_three_years", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Contract_GM_Element", "label": "hasPaymentTerms", "length": 4000, "title": "http://example.org/contract#hasPaymentTerms", "to": "http://example.org/contract#PaymentTerm_30_percent_upfront", "width": 12}, {"arrows": {"to": {"enabled": true, "scaleFactor": 2.5}}, "font": {"background": "white", "color": "black", "padding": 25, "size": 83, "strokeColor": "white", "strokeWidth": 0}, "from": "http://example.org/contract#Contract_GM_Element", "label": "hasPaymentTerms", "length": 4000, "title": "http://example.org/contract#hasPaymentTerms", "to": "PaymentTerm_70_percent_within_60_days", "width": 12}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 90}, "size": 144, "margin": 30, "scaling": {"min": 30, "max": 150}}, "edges": {"font": {"size": 83}, "length": 4000, "width": 12, "selectionWidth": 9, "smooth": {"enabled": true, "type": "curvedCW", "roundness": 0.3}}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -45000, "centralGravity": 0.0005, "springLength": 4000, "springConstant": 0.012, "damping": 0.95, "avoidOverlap": 1.0}, "minVelocity": 0.75, "maxVelocity": 25, "solver": "barnesHut", "stabilization": {"enabled": true, "iterations": 2000, "updateInterval": 25, "fit": true}}, "layout": {"improvedLayout": true, "randomSeed": 42, "hierarchical": {"enabled": false}}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true, "hideEdgesOnDrag": true, "hideNodesOnDrag": false}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+        <div id="Contract" class="tabcontent">
+            <div class="contract-content">
+                <h1>Contract Between GM and Element Fleet Management</h1>
+                
+                <div class="preamble">
+                    <p>This Agreement is entered into on this 22nd day of November, 2022, by and between:</p>
+                    <p><strong>General Motors</strong>, having its principal office at Detroit, Michigan (hereinafter referred to as the "OEM"),</p>
+                    <p>and</p>
+                    <p><strong>Element Fleet Management</strong>, having its principal office at Toronto, Canada (hereinafter referred to as the "FMC").</p>
+                </div>
+
+                <div class="whereas">
+                    <h2>WHEREAS</h2>
+                    <ul>
+                        <li>The OEM is a manufacturer of vehicles and related services.</li>
+                        <li>The FMC provides fleet management solutions and desires to procure vehicles and related services from the OEM.</li>
+                    </ul>
+                    <h2>NOW, THEREFORE, the parties agree as follows:</h2>
+                </div>
+
+                <div class="section">
+                    <h3>1. Definitions and Scope of Work</h3>
+                    <h4>1.1 Definitions:</h4>
+                    <ul>
+                        <li><strong>"Vehicles":</strong> Refers to the vehicles to be supplied by the OEM under this Agreement.</li>
+                        <li><strong>"Fleet Management Services":</strong> Includes vehicle maintenance, monitoring, telematics integration, and performance reporting.</li>
+                    </ul>
+                    <h4>1.2 Scope of Work:</h4>
+                    <p>The OEM agrees to supply vehicles and provide after-sales services, including ongoing technical support, maintenance, and training. The FMC agrees to procure vehicles and ensure proper usage and timely maintenance as specified.</p>
+                </div>
+
+                <div class="section">
+                    <h3>2. Supply and Procurement Terms</h3>
+                    <h4>2.1 Supply Terms</h4>
+                    <p>The OEM will supply 500 vehicles annually, with an initial commitment of 1,500 vehicles over three years.</p>
+                    <h4>2.2 Vehicle Models</h4>
+                    <p>The vehicle models shall include Model-A (300 units), Model-B (150 units), and Model-C (50 units) based on FMC specifications.</p>
+                    <h4>2.3 Delivery</h4>
+                    <p>Delivery shall be completed within 60 days of receiving the purchase order.</p>
+                </div>
+
+                <div class="section">
+                    <h3>3. Pricing, Discounts, and Rebates</h3>
+                    <h4>3.1 Vehicle Pricing</h4>
+                    <ul>
+                        <li>Model-A: $25,000</li>
+                        <li>Model-B: $30,000</li>
+                        <li>Model-C: $40,000</li>
+                    </ul>
+                    <h4>3.2 Payment Terms</h4>
+                    <ul>
+                        <li>30% upfront payment upon purchase order confirmation.</li>
+                        <li>Remaining 70% payable within 60 days of vehicle delivery.</li>
+                    </ul>
+                    <h4>3.3 Volume-Based Rebates</h4>
+                    <ul>
+                        <li>3% rebate for annual purchases of 1,000–1,499 units.</li>
+                        <li>5% rebate for annual purchases of 1,500–2,499 units.</li>
+                        <li>7% rebate for annual purchases exceeding 2,500 units.</li>
+                        <li>Rebates will be issued as a credit towards the next order or direct payment within 60 days of the rebate period.</li>
+                    </ul>
+                    <h4>3.4 Promotional Discounts</h4>
+                    <p>FMC is entitled to 5% seasonal discounts on orders placed between January and March each year.</p>
+                    <h4>3.5 Early Payment Discount</h4>
+                    <p>A 2% discount will apply for balances paid in full within 15 days of vehicle delivery.</p>
+                </div>
+
+                <div class="section">
+                    <h3>4. Warranty and Support</h3>
+                    <h4>4.1 Warranty Coverage</h4>
+                    <p>The OEM provides a 5-year/100,000-mile warranty for all vehicles.</p>
+                    <h4>4.2 Warranty Exclusions</h4>
+                    <p>Warranty covers defects in materials and workmanship but excludes damages resulting from misuse, accidents, or neglect.</p>
+                    <h4>4.3 Claim Processing</h4>
+                    <p>Warranty claims will be processed within 10 business days, with priority escalation for critical issues.</p>
+                </div>
+
+                <div class="section">
+                    <h3>5. After-Sales Support</h3>
+                    <h4>5.1 Maintenance Packages</h4>
+                    <p>OEM will offer FMC the following maintenance packages:</p>
+                    <ul>
+                        <li><strong>Basic:</strong> Routine maintenance every 10,000 miles.</li>
+                        <li><strong>Standard:</strong> Includes basic maintenance plus annual inspections.</li>
+                        <li><strong>Comprehensive:</strong> Covers all repairs, replacements, and emergency roadside assistance.</li>
+                    </ul>
+                    <h4>5.2 Technical Assistance</h4>
+                    <ul>
+                        <li>OEM will provide FMC with a 24/7 support hotline for technical queries.</li>
+                        <li>OEM will deploy technicians on-site for critical fleet issues requiring immediate attention.</li>
+                    </ul>
+                    <h4>5.3 Software Updates</h4>
+                    <p>Vehicles equipped with telematics or software will receive free updates for five years from the delivery date.</p>
+                    <h4>5.4 Service Network Access</h4>
+                    <p>FMC will have priority access to the OEM's nationwide service network, including exclusive service lanes at select locations.</p>
+                </div>
+
+                <div class="section">
+                    <h3>6. Performance Metrics and Service Level Agreements (SLAs)</h3>
+                    <h4>6.1 Delivery SLA</h4>
+                    <p>OEM guarantees a 98% on-time delivery rate.</p>
+                    <h4>6.2 Vehicle Downtime SLA</h4>
+                    <ul>
+                        <li>Standard repairs must be completed within 72 hours, and major repairs within 7 days.</li>
+                        <li>OEM will provide loaner vehicles at no additional cost if repair timelines exceed SLAs.</li>
+                    </ul>
+                    <h4>6.3 Fleet Uptime Guarantee</h4>
+                    <p>OEM commits to maintaining a 95% fleet uptime for vehicles under its maintenance program.</p>
+                    <h4>6.4 Penalty for SLA Breach</h4>
+                    <p>OEM will pay FMC a penalty of $500 per vehicle per day for delays or non-compliance with agreed SLAs, up to a maximum of $50,000 per incident.</p>
+                </div>
+
+                <div class="section">
+                    <h3>7. Data Sharing and Reporting</h3>
+                    <h4>7.1 Data Sharing</h4>
+                    <p>Both parties will share telematics data to improve fleet performance and diagnostics.</p>
+                    <h4>7.2 Data Ownership</h4>
+                    <p>FMC retains ownership of all operational data but grants OEM limited access for product improvements and service optimizations.</p>
+                </div>
+
+                <div class="section">
+                    <h3>8. Intellectual Property</h3>
+                    <h4>8.1 IP Rights</h4>
+                    <p>OEM retains all intellectual property rights for designs, software, and technology associated with the vehicles.</p>
+                </div>
+
+                <div class="section">
+                    <h3>9. Compliance and Regulatory Requirements</h3>
+                    <h4>9.1 Standards Compliance</h4>
+                    <p>OEM ensures all vehicles meet applicable safety, emissions, and regulatory standards in the regions of operation.</p>
+                </div>
+
+                <div class="section">
+                    <h3>10. Confidentiality</h3>
+                    <h4>10.1 Confidentiality Agreement</h4>
+                    <p>Both parties agree to maintain the confidentiality of proprietary information shared during this Agreement.</p>
+                </div>
+
+                <div class="section">
+                    <h3>11. Insurance and Liability</h3>
+                    <h4>11.1 Insurance Coverage</h4>
+                    <p>FMC will obtain comprehensive insurance coverage for all vehicles.</p>
+                    <h4>11.2 Liability</h4>
+                    <p>OEM assumes liability for manufacturing defects and issues occurring prior to delivery.</p>
+                </div>
+
+                <div class="section">
+                    <h3>12. Term and Termination</h3>
+                    <h4>12.1 Agreement Term</h4>
+                    <p>This Agreement will remain in effect for three years, with an option to renew upon mutual agreement.</p>
+                    <h4>12.2 Termination</h4>
+                    <p>Either party may terminate the Agreement with a 90-day written notice for breach of contract.</p>
+                </div>
+
+                <div class="section">
+                    <h3>13. Dispute Resolution</h3>
+                    <h4>13.1 Resolution Process</h4>
+                    <p>Disputes will first be resolved through mediation. If unresolved, arbitration will be conducted under the laws of [State/Country].</p>
+                </div>
+
+                <div class="section">
+                    <h3>14. Force Majeure</h3>
+                    <h4>14.1 Force Majeure Events</h4>
+                    <p>Neither party shall be liable for delays caused by events beyond their control, such as natural disasters or government actions.</p>
+                </div>
+
+                <div class="section">
+                    <h3>15. Audit and Inspection Rights</h3>
+                    <h4>15.1 Audit Rights</h4>
+                    <p>FMC may audit OEM facilities once annually, with 30-day prior notice.</p>
+                </div>
+
+                <div class="section">
+                    <h3>16. Indemnity</h3>
+                    <h4>16.1 Indemnification</h4>
+                    <p>OEM will indemnify FMC against third-party claims arising from product defects or service failures.</p>
+                </div>
+
+                <div class="section">
+                    <h3>17. Amendments and Waivers</h3>
+                    <h4>17.1 Amendment Process</h4>
+                    <p>Any amendments must be in writing and signed by both parties.</p>
+                </div>
+
+                <div class="signature">
+                    <h3>Signed:</h3>
+                    <div class="signature-block">
+                        <div class="signature-party">
+                            <h4>For OEM</h4>
+                            <p>Signature: _________________________</p>
+                            <p>Name: ____________________________</p>
+                            <p>Title: _____________________________</p>
+                            <p>Date: _____________________________</p>
+                        </div>
+                        <div class="signature-party">
+                            <h4>For FMC</h4>
+                            <p>Signature: _________________________</p>
+                            <p>Name: ____________________________</p>
+                            <p>Title: _____________________________</p>
+                            <p>Date: _____________________________</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+        
+        <div class="legend">
+            <h3 style="font-size: 24px; margin: 0 0 10px 0;">Node Types</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 20px; line-height: 1.5;">
+                <li><span style="color: #f28e2c;">●</span> Party</li>
+                <li><span style="color: #76b7b2;">●</span> Payment</li>
+                <li><span style="color: #59a14f;">●</span> Rebate</li>
+                <li><span style="color: #edc949;">●</span> Discount</li>
+                <li><span style="color: #af7aa1;">●</span> Service</li>
+                <li><span style="color: #ff9da7;">●</span> Penalty</li>
+                <li><span style="color: #45B6FE;">●</span> Deliverable</li>
+            </ul>
+        </div>
+        </body>
+</html>
